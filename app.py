@@ -10,9 +10,8 @@ DATABASE_URL = os.getenv('postgresql://postgres:JZlgqZuqUxtdEiGKAIzgOUDpMQqKRtSQ
 
 # Function to connect to the PostgreSQL database
 def get_connection():
-    conn = psycopg2.connect('postgresql://postgres:JZlgqZuqUxtdEiGKAIzgOUDpMQqKRtSQ@viaduct.proxy.rlwy.net:59496/railway')
+    conn = psycopg2.connect(DATABASE_URL)
     return conn
-
 
 
 
